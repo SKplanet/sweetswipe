@@ -8,6 +8,8 @@ A lightweight swiping(flicking) mobile web component.
 * <a href="https://skplanet.github.io/sweetswipe/demo/swipe.html" target="_blank">Base demo</a>
 * <a href="https://skplanet.github.io/sweetswipe/demo/swipe_circular.html" target="_blank">Circular demo</a>
 
+<img src="demo/img/swipedemo.png" width="300">
+
 <br>
 ## Feature
 
