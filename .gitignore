@@ -1,5 +1,4 @@
 node_modules/
 jspm_packages/
 _test/
-dist/
 demo/multiSwipe.html
