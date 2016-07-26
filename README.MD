@@ -5,7 +5,7 @@ A lightweight swiping(flicking) mobile web component.
 <br>
 ## Demo
 
-http://nigayo.github.io/......html
+https://skplanet.github.io/sweetswipe/demo/swipe.html
 
 <br>
 ## Feature
@@ -20,7 +20,7 @@ http://nigayo.github.io/......html
 | Device | Browser | 
 | ------ | ------- |
 | Desktop| IE9+, FF, Chrome, Safari |
-| Mobile | Android 4.0+, Chrome, Safari |
+| Mobile | Android 4.x, Chrome, Safari |
 
 <br>
 ## Install
@@ -221,9 +221,6 @@ Tab menu navigation UI.
   ]);
 ```
 
-#### DEMO
-http://127.0.0.1:8080/demo/demo.html
-
 <br>
 ##  Plugin - SwipeStepMoverPlugin
 Button menu navigation UI
@@ -250,9 +247,6 @@ Button menu navigation UI
     'userMethod' : {}
   ]);
 ```
-
-#### DEMO
-http://127.0.0.1:8080/demo/demo.html
 
 <br>
 ## Contributing
