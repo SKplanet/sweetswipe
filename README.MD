@@ -93,7 +93,7 @@ A lightweight swiping(flicking) mobile web component.
 ```javascript
 
   var oMyswipe = new SweetSwipe($("#swipeWrap"), {
-      'bCircular': true,'
+      'bCircular': true,
       'nDuration': 100,
       'nBackWidth': 60,
       'nSideWidth': 20,
