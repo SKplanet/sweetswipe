@@ -1,0 +1,32 @@
+{
+  "name": "sweetswipe",
+  "version": "0.9.7",
+  "homepage": "https://github.com/SKplanet/sweetswipe",
+  "main": "dist/swipe_merge_es5.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "build",
+    "speed",
+    "test",
+    "*.md",
+    "AUTHORS.txt",
+    "Gruntfile.js",
+    "package.json",
+    "node_modules",
+    "bower_components",
+    "tests"
+  ],
+  "keywords": [
+    "swipe",
+    "touch",
+    "tabs"
+  ],
+  "dependencies": {
+    "jquery": ">=1.10.0"
+  },
+  "authors": [
+    "nigayo <https://github.com/nigayo>"
+  ],
+  "description": "A lightweight swiping(flicking) mobile web component."
+}
