@@ -5,13 +5,14 @@ A lightweight swiping(flicking) mobile web component.
 <br>
 ## Demo
 
-https://skplanet.github.io/sweetswipe/demo/swipe.html
+* <a href="https://skplanet.github.io/sweetswipe/demo/swipe.html" target="_blank">Base demo</a>
+* <a href="https://skplanet.github.io/sweetswipe/demo/swipe_circular.html" target="_blank">Circular demo</a>
 
 <br>
 ## Feature
 
 * lightweight (vanillaJS)
-* Fast animation
+* CSS3 based fast animation
 * multiple options and plugins
 
 <br>
