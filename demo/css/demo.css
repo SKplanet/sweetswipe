@@ -1,0 +1,218 @@
+body, div,ul,li {
+  margin:0px;padding:0px;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+a { text-decoration: none;}
+
+a:visited {
+  color : gray;
+}
+
+a:link {
+  color: black;
+}
+
+
+.notice {
+  margin: 30px;
+  color : indianred;
+  text-align: center;
+  font-size: 2em;
+}
+
+#wrapper *  {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.247059);
+}
+
+#wrapper > nav {
+  margin: 15px;
+}
+
+#wrapper > nav > div {
+ width: 100%;
+ overflow: hidden;
+}
+
+#wrapper > nav ul {
+  1text-align: center;
+  width : 100%;
+}
+
+#wrapper > nav ul li {
+  margin-right: 8%;
+  opacity: 0.2;
+  width: 14%;
+}
+
+#wrapper > nav ul li:first-child {
+  margin-left : 8%;
+}
+
+#wrapper > nav ul li.selectedMenu {
+  opacity: 1.0;
+}
+
+#wrapper > nav ul li.selected-swipe-li {
+  opacity: 1.0;
+}
+
+.viewArea {
+  overflow: hidden;
+}
+
+#swipeWrap {
+  position : relative;
+  width :100%;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+  font-size: 0.9em;
+}
+
+#swipeWrap > div {
+  width :100%;
+  position: absolute;
+  top: 0;
+  height: auto;
+}
+
+#swipeWrap > div:nth-child(1) {
+  -ms-transform: translate3d(0%, 0px, 0px);
+  -webkit-transform: translate3d(0%, 0px, 0px);
+  transform: translate3d(0%, 0px, 0px);
+  background-color: #F5F5F5;
+}
+#swipeWrap > div:nth-child(2){
+  -ms-transform: translate3d(100%, 0px, 0px);
+  -webkit-transform: translate3d(100%, 0px, 0px);
+  transform: translate3d(100%, 0px, 0px);
+  background-color: #BBDEFB;
+}
+#swipeWrap > div:nth-child(3){
+  -ms-transform: translate3d(200%, 0px, 0px);
+  -webkit-transform: translate3d(200%, 0px, 0px);
+  transform: translate3d(200%, 0px, 0px);
+  background-color: #FFFDE7;
+}
+
+#swipeWrap > div:nth-child(4){
+  -ms-transform: translate3d(300%, 0px, 0px);
+  -webkit-transform: translate3d(300%, 0px, 0px);
+  transform: translate3d(300%, 0px, 0px);
+  background-color: #FFCDD2;
+}
+
+/* inner swipe */
+.menuAds {
+  height: 150px;
+  overflow: hidden;
+}
+
+.menuAds ul {
+  position : relative;
+  width :100%;
+  font-size: 0.9em;
+  -ms-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.menuAds ul li {
+  width :100%;
+  position: absolute;
+  top: 0;
+  height: auto;
+}
+
+.menuAds ul li:nth-child(1) {
+  -ms-transform: translate3d(0%, 0px, 0px);
+  -webkit-transform: translate3d(0%, 0px, 0px);
+  transform: translate3d(0%, 0px, 0px);
+}
+.menuAds ul li:nth-child(2) {
+  -ms-transform: translate3d(100%, 0px, 0px);
+  -webkit-transform: translate3d(100%, 0px, 0px);
+  transform: translate3d(100%, 0px, 0px);
+}
+.menuAds ul li:nth-child(3) {
+  -ms-transform: translate3d(200%, 0px, 0px);
+  -webkit-transform: translate3d(200%, 0px, 0px);
+  transform: translate3d(200%, 0px, 0px);
+}
+.menuAds ul li:nth-child(4) {
+  -ms-transform: translate3d(300%, 0px, 0px);
+  -webkit-transform: translate3d(300%, 0px, 0px);
+  transform: translate3d(300%, 0px, 0px);
+}
+
+
+#log {
+  margin: 10px;
+  width : 200px;
+  border : 1px solid red;
+  1display: none;
+}
+
+ul.mainList li {
+  width: 48%;
+  margin-left: 1%;
+}
+
+ul.mainList li:nth-child(odd) a {
+  margin: 0 5px 0 0;
+  float: right;
+}
+
+ul.mainList li:nth-child(even) a {
+  margin: 0 5px 0 0;
+  float: left;
+}
+
+a.box-quickorder {
+  display: block;
+}
+
+.item-img {
+  height: 100px;
+  background-repeat: no-repeat;
+  1background-position: 50% 0;
+  background-size: 100% auto;
+}
+
+.buttonNavi {
+  position: fixed;
+  top : 100px;
+  width :100%;
+}
+
+.buttonNavi button {
+  font-size: 2em;
+  background-color: rgba(95, 158, 160, 0.64);
+  border: 0;
+  margin: 0% 2.5%;
+}
+
+button.swipe-prev {
+  float: left;
+}
+
+button.swipe-next{
+  float: right;
+}
+
+/* for syrup demo page */
+.viewArea #swipeWrap div img {
+  display: block;
+  width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+  .notice {
+    font-size : 1.05em;
+    margin:10px;
+  }
+}
+

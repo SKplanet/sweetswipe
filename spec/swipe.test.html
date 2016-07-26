@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="/demo/css/demo.css">
+  <link rel="stylesheet" href="../node_modules/mocha/mocha.css">
+
+</head>
+<body>
+
+  <div id="mocha"></div>
+
+  <div id="wrapper">
+    <nav>
+      <div id='swipeNaviWrap'>
+        <ul>
+          <li class="selected-swipe-li"><a href="#">first</a></li>
+          <li><a href="#">second</a></li>
+          <li><a href="#">third</a></li>
+          <li><a href="#">fourth</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="pageNumber"></div>
+
+    <div class="viewArea">
+      <div id="swipeWrap">
+        <div>
+         <ul class="mainList" style="padding-top: 10px;">
+          <li>
+            <a class="box-quickorder"> 
+              <div class="item-img" style="background-image:url(/demo/img/1.jpg)"></div>
+              <h4 class="lst-name">Latte small 1</h4>
+              <span class="lst-location">Domino's Pizza</span>
+              <button class="btn-order"><span>order</span></button>
+              <span class="txt-rct">recent order</span>    
+            </a>
+          </li>
+          <li>
+            <a class="box-quickorder"> 
+              <div class="item-img" style="background-image:url(/demo/img/2.jpg)"></div>
+              <h4 class="lst-name">Latte small 1</h4>
+              <span class="lst-location">Domino's Pizza</span>
+              <button class="btn-order"><span>order</span></button>
+              <span class="txt-rct">recent order</span>    
+            </a>
+          </li>
+
+          <li>
+            <a class="box-quickorder"> 
+              <div class="item-img" style="background-image:url(/demo/img/3.jpg)"></div>
+              <h4 class="lst-name">Latte small 1</h4>
+              <span class="lst-location">Domino's Pizza</span>
+              <button class="btn-order"><span>order</span></button>
+              <span class="txt-rct">recent order</span>    
+            </a>
+          </li>
+
+          <li>
+            <a class="box-quickorder"> 
+              <div class="item-img" style="background-image:url(/demo/img/4.jpg)"></div>
+              <h4 class="lst-name">Latte small 1</h4>
+              <span class="lst-location">Domino's Pizza</span>
+              <button class="btn-order"><span>order</span></button>
+              <span class="txt-rct">recent order</span>    
+            </a>
+          </li>
+
+          <li>
+            <a class="box-quickorder"> 
+              <div class="item-img" style="background-image:url(/demo/img/1.jpg)"></div>
+              <h4 class="lst-name">Latte small 1</h4>
+              <span class="lst-location">Domino's Pizza</span>
+              <button class="btn-order"><span>order</span></button>
+              <span class="txt-rct">recent order</span>    
+            </a>
+          </li>
+          <li>
+            <a class="box-quickorder"> 
+              <div class="item-img" style="background-image:url(/demo/img/2.jpg)"></div>
+              <h4 class="lst-name">Latte small 1</h4>
+              <span class="lst-location">Domino's Pizza</span>
+              <button class="btn-order"><span>order</span></button>
+              <span class="txt-rct">recent order</span>    
+            </a>
+          </li>
+
+          <li>
+            <a class="box-quickorder"> 
+              <div class="item-img" style="background-image:url(/demo/img/3.jpg)"></div>
+              <h4 class="lst-name">Latte small 1</h4>
+              <span class="lst-location">Domino's Pizza</span>
+              <button class="btn-order"><span>order</span></button>
+              <span class="txt-rct">recent order</span>    
+            </a>
+          </li>
+
+          <li>
+            <a class="box-quickorder"> 
+              <div class="item-img" style="background-image:url(/demo/img/4.jpg)"></div>
+              <h4 class="lst-name">Latte small 1</h4>
+              <span class="lst-location">Domino's Pizza</span>
+              <button class="btn-order"><span>order</span></button>
+              <span class="txt-rct">recent order</span>    
+            </a>
+          </li>
+
+          <li>
+            <a class="box-quickorder"> 
+              <div class="item-img" style="background-image:url(/demo/img/1.jpg)"></div>
+              <h4 class="lst-name">Latte small 1</h4>
+              <span class="lst-location">Domino's Pizza</span>
+              <button class="btn-order"><span>order</span></button>
+              <span class="txt-rct">recent order</span>    
+            </a>
+          </li>
+          <li>
+            <a class="box-quickorder"> 
+              <div class="item-img" style="background-image:url(/demo/img/2.jpg)"></div>
+              <h4 class="lst-name">Latte small 1</h4>
+              <span class="lst-location">Domino's Pizza</span>
+              <button class="btn-order"><span>order</span></button>
+              <span class="txt-rct">recent order</span>    
+            </a>
+          </li>
+
+          <li>
+            <a class="box-quickorder"> 
+              <div class="item-img" style="background-image:url(/demo/img/3.jpg)"></div>
+              <h4 class="lst-name">Latte small 1</h4>
+              <span class="lst-location">Domino's Pizza</span>
+              <button class="btn-order"><span>order</span></button>
+              <span class="txt-rct">recent order</span>    
+            </a>
+          </li>
+
+          <li>
+            <a class="box-quickorder"> 
+              <div class="item-img" style="background-image:url(/demo/img/4.jpg)"></div>
+              <h4 class="lst-name">Latte small 1</h4>
+              <span class="lst-location">Domino's Pizza</span>
+              <button class="btn-order"><span>order</span></button>
+              <span class="txt-rct">recent order</span>    
+            </a>
+          </li>
+
+          <li>
+            <a class="box-quickorder"> 
+              <div class="item-img" style="background-image:url(/demo/img/1.jpg)"></div>
+              <h4 class="lst-name">Latte small 1</h4>
+              <span class="lst-location">Domino's Pizza</span>
+              <button class="btn-order"><span>order</span></button>
+              <span class="txt-rct">recent order</span>    
+            </a>
+          </li>
+          <li>
+            <a class="box-quickorder"> 
+              <div class="item-img" style="background-image:url(/demo/img/2.jpg)"></div>
+              <h4 class="lst-name">Latte small 1</h4>
+              <span class="lst-location">Domino's Pizza</span>
+              <button class="btn-order"><span>order</span></button>
+              <span class="txt-rct">recent order</span>    
+            </a>
+          </li>
+
+          <li>
+            <a class="box-quickorder"> 
+              <div class="item-img" style="background-image:url(/demo/img/3.jpg)"></div>
+              <h4 class="lst-name">Latte small 1</h4>
+              <span class="lst-location">Domino's Pizza</span>
+              <button class="btn-order"><span>order</span></button>
+              <span class="txt-rct">recent order</span>    
+            </a>
+          </li>
+
+          <li>
+            <a class="box-quickorder"> 
+              <div class="item-img" style="background-image:url(/demo/img/4.jpg)"></div>
+              <h4 class="lst-name">Latte small 1</h4>
+              <span class="lst-location">Domino's Pizza</span>
+              <button class="btn-order"><span>order</span></button>
+              <span class="txt-rct">recent order</span>    
+            </a>
+          </li> 
+
+        </ul> 
+      </div>
+
+
+      <div >
+       <ul class="mainList" style="padding-top: 10px;">
+        <li>
+          <a class="box-quickorder"> 
+            <div class="item-img" style="background-image:url(/demo/img/1.jpg)"></div>
+            <h4 class="lst-name">Latte small 1</h4>
+            <span class="lst-location">Domino's Pizza</span>
+            <button class="btn-order"><span>order</span></button>
+            <span class="txt-rct">recent order</span>    
+          </a>
+        </li>
+        <li>
+          <a class="box-quickorder"> 
+            <div class="item-img" style="background-image:url(/demo/img/2.jpg)"></div>
+            <h4 class="lst-name">Latte small 1</h4>
+            <span class="lst-location">Domino's Pizza</span>
+            <button class="btn-order"><span>order</span></button>
+            <span class="txt-rct">recent order</span>    
+          </a>
+        </li>
+
+        <li>
+          <a class="box-quickorder"> 
+            <div class="item-img" style="background-image:url(/demo/img/3.jpg)"></div>
+            <h4 class="lst-name">Latte small 1</h4>
+            <span class="lst-location">Domino's Pizza</span>
+            <button class="btn-order"><span>order</span></button>
+            <span class="txt-rct">recent order</span>    
+          </a>
+        </li>
+
+        <li>
+          <a class="box-quickorder"> 
+            <div class="item-img" style="background-image:url(/demo/img/4.jpg)"></div>
+            <h4 class="lst-name">Latte small 1</h4>
+            <span class="lst-location">Domino's Pizza</span>
+            <button class="btn-order"><span>order</span></button>
+            <span class="txt-rct">recent order</span>    
+          </a>
+        </li>
+
+        <li>
+          <a class="box-quickorder"> 
+            <div class="item-img" style="background-image:url(/demo/img/1.jpg)"></div>
+            <h4 class="lst-name">Latte small 1</h4>
+            <span class="lst-location">Domino's Pizza</span>
+            <button class="btn-order"><span>order</span></button>
+            <span class="txt-rct">recent order</span>    
+          </a>
+        </li>
+        <li>
+          <a class="box-quickorder"> 
+            <div class="item-img" style="background-image:url(/demo/img/2.jpg)"></div>
+            <h4 class="lst-name">Latte small 1</h4>
+            <span class="lst-location">Domino's Pizza</span>
+            <button class="btn-order"><span>order</span></button>
+            <span class="txt-rct">recent order</span>    
+          </a>
+        </li>
+
+        <li>
+          <a class="box-quickorder"> 
+            <div class="item-img" style="background-image:url(/demo/img/3.jpg)"></div>
+            <h4 class="lst-name">Latte small 1</h4>
+            <span class="lst-location">Domino's Pizza</span>
+            <button class="btn-order"><span>order</span></button>
+            <span class="txt-rct">recent order</span>    
+          </a>
+        </li>
+
+        <li>
+          <a class="box-quickorder"> 
+            <div class="item-img" style="background-image:url(/demo/img/4.jpg)"></div>
+            <h4 class="lst-name">Latte small 1</h4>
+            <span class="lst-location">Domino's Pizza</span>
+            <button class="btn-order"><span>order</span></button>
+            <span class="txt-rct">recent order</span>    
+          </a>
+        </li>
+
+        <li>
+          <a class="box-quickorder"> 
+            <div class="item-img" style="background-image:url(/demo/img/1.jpg)"></div>
+            <h4 class="lst-name">Latte small 1</h4>
+            <span class="lst-location">Domino's Pizza</span>
+            <button class="btn-order"><span>order</span></button>
+            <span class="txt-rct">recent order</span>    
+          </a>
+        </li>
+        <li>
+          <a class="box-quickorder"> 
+            <div class="item-img" style="background-image:url(/demo/img/2.jpg)"></div>
+            <h4 class="lst-name">Latte small 1</h4>
+            <span class="lst-location">Domino's Pizza</span>
+            <button class="btn-order"><span>order</span></button>
+            <span class="txt-rct">recent order</span>    
+          </a>
+        </li>
+
+        <li>
+          <a class="box-quickorder"> 
+            <div class="item-img" style="background-image:url(/demo/img/3.jpg)"></div>
+            <h4 class="lst-name">Latte small 1</h4>
+            <span class="lst-location">Domino's Pizza</span>
+            <button class="btn-order"><span>order</span></button>
+            <span class="txt-rct">recent order</span>    
+          </a>
+        </li>
+
+        <li>
+          <a class="box-quickorder"> 
+            <div class="item-img" style="background-image:url(/demo/img/4.jpg)"></div>
+            <h4 class="lst-name">Latte small 1</h4>
+            <span class="lst-location">Domino's Pizza</span>
+            <button class="btn-order"><span>order</span></button>
+            <span class="txt-rct">recent order</span>    
+          </a>
+        </li>
+
+        <li>
+          <a class="box-quickorder"> 
+            <div class="item-img" style="background-image:url(/demo/img/1.jpg)"></div>
+            <h4 class="lst-name">Latte small 1</h4>
+            <span class="lst-location">Domino's Pizza</span>
+            <button class="btn-order"><span>order</span></button>
+            <span class="txt-rct">recent order</span>    
+          </a>
+        </li>
+        <li>
+          <a class="box-quickorder"> 
+            <div class="item-img" style="background-image:url(/demo/img/2.jpg)"></div>
+            <h4 class="lst-name">Latte small 1</h4>
+            <span class="lst-location">Domino's Pizza</span>
+            <button class="btn-order"><span>order</span></button>
+            <span class="txt-rct">recent order</span>    
+          </a>
+        </li>
+
+        <li>
+          <a class="box-quickorder"> 
+            <div class="item-img" style="background-image:url(/demo/img/3.jpg)"></div>
+            <h4 class="lst-name">Latte small 1</h4>
+            <span class="lst-location">Domino's Pizza</span>
+            <button class="btn-order"><span>order</span></button>
+            <span class="txt-rct">recent order</span>    
+          </a>
+        </li>
+
+        <li>
+          <a class="box-quickorder"> 
+            <div class="item-img" style="background-image:url(/demo/img/4.jpg)"></div>
+            <h4 class="lst-name">Latte small 1</h4>
+            <span class="lst-location">Domino's Pizza</span>
+            <button class="btn-order"><span>order</span></button>
+            <span class="txt-rct">recent order</span>    
+          </a>
+        </li> 
+
+      </ul> 
+    </div>
+
+
+    <div >
+     <ul class="mainList" style="padding-top: 10px;">
+      <li>
+        <a class="box-quickorder"> 
+          <div class="item-img" style="background-image:url(/demo/img/1.jpg)"></div>
+          <h4 class="lst-name">Latte small 1</h4>
+          <span class="lst-location">Domino's Pizza</span>
+          <button class="btn-order"><span>order</span></button>
+          <span class="txt-rct">recent order</span>    
+        </a>
+      </li>
+      <li>
+        <a class="box-quickorder"> 
+          <div class="item-img" style="background-image:url(/demo/img/2.jpg)"></div>
+          <h4 class="lst-name">Latte small 1</h4>
+          <span class="lst-location">Domino's Pizza</span>
+          <button class="btn-order"><span>order</span></button>
+          <span class="txt-rct">recent order</span>    
+        </a>
+      </li>
+
+      <li>
+        <a class="box-quickorder"> 
+          <div class="item-img" style="background-image:url(/demo/img/3.jpg)"></div>
+          <h4 class="lst-name">Latte small 1</h4>
+          <span class="lst-location">Domino's Pizza</span>
+          <button class="btn-order"><span>order</span></button>
+          <span class="txt-rct">recent order</span>    
+        </a>
+      </li>
+
+      <li>
+        <a class="box-quickorder"> 
+          <div class="item-img" style="background-image:url(/demo/img/4.jpg)"></div>
+          <h4 class="lst-name">Latte small 1</h4>
+          <span class="lst-location">Domino's Pizza</span>
+          <button class="btn-order"><span>order</span></button>
+          <span class="txt-rct">recent order</span>    
+        </a>
+      </li>
+
+      <li>
+        <a class="box-quickorder"> 
+          <div class="item-img" style="background-image:url(/demo/img/1.jpg)"></div>
+          <h4 class="lst-name">Latte small 1</h4>
+          <span class="lst-location">Domino's Pizza</span>
+          <button class="btn-order"><span>order</span></button>
+          <span class="txt-rct">recent order</span>    
+        </a>
+      </li>
+      <li>
+        <a class="box-quickorder"> 
+          <div class="item-img" style="background-image:url(/demo/img/2.jpg)"></div>
+          <h4 class="lst-name">Latte small 1</h4>
+          <span class="lst-location">Domino's Pizza</span>
+          <button class="btn-order"><span>order</span></button>
+          <span class="txt-rct">recent order</span>    
+        </a>
+      </li>
+
+      <li>
+        <a class="box-quickorder"> 
+          <div class="item-img" style="background-image:url(/demo/img/3.jpg)"></div>
+          <h4 class="lst-name">Latte small 1</h4>
+          <span class="lst-location">Domino's Pizza</span>
+          <button class="btn-order"><span>order</span></button>
+          <span class="txt-rct">recent order</span>    
+        </a>
+      </li>
+
+      <li>
+        <a class="box-quickorder"> 
+          <div class="item-img" style="background-image:url(/demo/img/4.jpg)"></div>
+          <h4 class="lst-name">Latte small 1</h4>
+          <span class="lst-location">Domino's Pizza</span>
+          <button class="btn-order"><span>order</span></button>
+          <span class="txt-rct">recent order</span>    
+        </a>
+      </li>
+
+      <li>
+        <a class="box-quickorder"> 
+          <div class="item-img" style="background-image:url(/demo/img/1.jpg)"></div>
+          <h4 class="lst-name">Latte small 1</h4>
+          <span class="lst-location">Domino's Pizza</span>
+          <button class="btn-order"><span>order</span></button>
+          <span class="txt-rct">recent order</span>    
+        </a>
+      </li>
+      <li>
+        <a class="box-quickorder"> 
+          <div class="item-img" style="background-image:url(/demo/img/2.jpg)"></div>
+          <h4 class="lst-name">Latte small 1</h4>
+          <span class="lst-location">Domino's Pizza</span>
+          <button class="btn-order"><span>order</span></button>
+          <span class="txt-rct">recent order</span>    
+        </a>
+      </li>
+
+      <li>
+        <a class="box-quickorder"> 
+          <div class="item-img" style="background-image:url(/demo/img/3.jpg)"></div>
+          <h4 class="lst-name">Latte small 1</h4>
+          <span class="lst-location">Domino's Pizza</span>
+          <button class="btn-order"><span>order</span></button>
+          <span class="txt-rct">recent order</span>    
+        </a>
+      </li>
+
+      <li>
+        <a class="box-quickorder"> 
+          <div class="item-img" style="background-image:url(/demo/img/4.jpg)"></div>
+          <h4 class="lst-name">Latte small 1</h4>
+          <span class="lst-location">Domino's Pizza</span>
+          <button class="btn-order"><span>order</span></button>
+          <span class="txt-rct">recent order</span>    
+        </a>
+      </li>
+
+      <li>
+        <a class="box-quickorder"> 
+          <div class="item-img" style="background-image:url(/demo/img/1.jpg)"></div>
+          <h4 class="lst-name">Latte small 1</h4>
+          <span class="lst-location">Domino's Pizza</span>
+          <button class="btn-order"><span>order</span></button>
+          <span class="txt-rct">recent order</span>    
+        </a>
+      </li>
+      <li>
+        <a class="box-quickorder"> 
+          <div class="item-img" style="background-image:url(/demo/img/2.jpg)"></div>
+          <h4 class="lst-name">Latte small 1</h4>
+          <span class="lst-location">Domino's Pizza</span>
+          <button class="btn-order"><span>order</span></button>
+          <span class="txt-rct">recent order</span>    
+        </a>
+      </li>
+
+      <li>
+        <a class="box-quickorder"> 
+          <div class="item-img" style="background-image:url(/demo/img/3.jpg)"></div>
+          <h4 class="lst-name">Latte small 1</h4>
+          <span class="lst-location">Domino's Pizza</span>
+          <button class="btn-order"><span>order</span></button>
+          <span class="txt-rct">recent order</span>    
+        </a>
+      </li>
+
+      <li>
+        <a class="box-quickorder"> 
+          <div class="item-img" style="background-image:url(/demo/img/4.jpg)"></div>
+          <h4 class="lst-name">Latte small 1</h4>
+          <span class="lst-location">Domino's Pizza</span>
+          <button class="btn-order"><span>order</span></button>
+          <span class="txt-rct">recent order</span>    
+        </a>
+      </li> 
+      <li>
+        <a class="box-quickorder"> 
+          <div class="item-img" style="background-image:url(/demo/img/2.jpg)"></div>
+          <h4 class="lst-name">Latte small 1</h4>
+          <span class="lst-location">Domino's Pizza</span>
+          <button class="btn-order"><span>order</span></button>
+          <span class="txt-rct">recent order</span>    
+        </a>
+      </li>
+
+      <li>
+        <a class="box-quickorder"> 
+          <div class="item-img" style="background-image:url(/demo/img/3.jpg)"></div>
+          <h4 class="lst-name">Latte small 1</h4>
+          <span class="lst-location">Domino's Pizza</span>
+          <button class="btn-order"><span>order</span></button>
+          <span class="txt-rct">recent order</span>    
+        </a>
+      </li>
+
+      <li>
+        <a class="box-quickorder"> 
+          <div class="item-img" style="background-image:url(/demo/img/4.jpg)"></div>
+          <h4 class="lst-name">Latte small 1</h4>
+          <span class="lst-location">Domino's Pizza</span>
+          <button class="btn-order"><span>order</span></button>
+          <span class="txt-rct">recent order</span>    
+        </a>
+      </li>
+
+      <li>
+        <a class="box-quickorder"> 
+          <div class="item-img" style="background-image:url(/demo/img/1.jpg)"></div>
+          <h4 class="lst-name">Latte small 1</h4>
+          <span class="lst-location">Domino's Pizza</span>
+          <button class="btn-order"><span>order</span></button>
+          <span class="txt-rct">recent order</span>    
+        </a>
+      </li>
+      <li>
+        <a class="box-quickorder"> 
+          <div class="item-img" style="background-image:url(/demo/img/2.jpg)"></div>
+          <h4 class="lst-name">Latte small 1</h4>
+          <span class="lst-location">Domino's Pizza</span>
+          <button class="btn-order"><span>order</span></button>
+          <span class="txt-rct">recent order</span>    
+        </a>
+      </li>
+
+      <li>
+        <a class="box-quickorder"> 
+          <div class="item-img" style="background-image:url(/demo/img/3.jpg)"></div>
+          <h4 class="lst-name">Latte small 1</h4>
+          <span class="lst-location">Domino's Pizza</span>
+          <button class="btn-order"><span>order</span></button>
+          <span class="txt-rct">recent order</span>    
+        </a>
+      </li>
+
+      <li>
+        <a class="box-quickorder"> 
+          <div class="item-img" style="background-image:url(/demo/img/4.jpg)"></div>
+          <h4 class="lst-name">Latte small 1</h4>
+          <span class="lst-location">Domino's Pizza</span>
+          <button class="btn-order"><span>order</span></button>
+          <span class="txt-rct">recent order</span>    
+        </a>
+      </li> 
+
+    </ul> 
+  </div>
+
+
+  <div >
+   <ul class="mainList"  style="padding-top: 10px;">
+    <li>
+      <a class="box-quickorder"> 
+        <div class="item-img" style="background-image:url(/demo/img/1.jpg)"></div>
+        <h4 class="lst-name">Latte small 1</h4>
+        <span class="lst-location">Domino's Pizza</span>
+        <button class="btn-order"><span>order</span></button>
+        <span class="txt-rct">recent order</span>    
+      </a>
+    </li>
+    <li>
+      <a class="box-quickorder"> 
+        <div class="item-img" style="background-image:url(/demo/img/2.jpg)"></div>
+        <h4 class="lst-name">Latte small 1</h4>
+        <span class="lst-location">Domino's Pizza</span>
+        <button class="btn-order"><span>order</span></button>
+        <span class="txt-rct">recent order</span>    
+      </a>
+    </li>
+
+    <li>
+      <a class="box-quickorder"> 
+        <div class="item-img" style="background-image:url(/demo/img/3.jpg)"></div>
+        <h4 class="lst-name">Latte small 1</h4>
+        <span class="lst-location">Domino's Pizza</span>
+        <button class="btn-order"><span>order</span></button>
+        <span class="txt-rct">recent order</span>    
+      </a>
+    </li>
+
+    <li>
+      <a class="box-quickorder"> 
+        <div class="item-img" style="background-image:url(/demo/img/4.jpg)"></div>
+        <h4 class="lst-name">Latte small 1</h4>
+        <span class="lst-location">Domino's Pizza</span>
+        <button class="btn-order"><span>order</span></button>
+        <span class="txt-rct">recent order</span>    
+      </a>
+    </li>
+
+    <li>
+      <a class="box-quickorder"> 
+        <div class="item-img" style="background-image:url(/demo/img/1.jpg)"></div>
+        <h4 class="lst-name">Latte small 1</h4>
+        <span class="lst-location">Domino's Pizza</span>
+        <button class="btn-order"><span>order</span></button>
+        <span class="txt-rct">recent order</span>    
+      </a>
+    </li>
+    <li>
+      <a class="box-quickorder"> 
+        <div class="item-img" style="background-image:url(/demo/img/2.jpg)"></div>
+        <h4 class="lst-name">Latte small 1</h4>
+        <span class="lst-location">Domino's Pizza</span>
+        <button class="btn-order"><span>order</span></button>
+        <span class="txt-rct">recent order</span>    
+      </a>
+    </li>
+
+    <li>
+      <a class="box-quickorder"> 
+        <div class="item-img" style="background-image:url(/demo/img/3.jpg)"></div>
+        <h4 class="lst-name">Latte small 1</h4>
+        <span class="lst-location">Domino's Pizza</span>
+        <button class="btn-order"><span>order</span></button>
+        <span class="txt-rct">recent order</span>    
+      </a>
+    </li>
+
+    <li>
+      <a class="box-quickorder"> 
+        <div class="item-img" style="background-image:url(/demo/img/4.jpg)"></div>
+        <h4 class="lst-name">Latte small 1</h4>
+        <span class="lst-location">Domino's Pizza</span>
+        <button class="btn-order"><span>order</span></button>
+        <span class="txt-rct">recent order</span>    
+      </a>
+    </li>
+
+    <li>
+      <a class="box-quickorder"> 
+        <div class="item-img" style="background-image:url(/demo/img/1.jpg)"></div>
+        <h4 class="lst-name">Latte small 1</h4>
+        <span class="lst-location">Domino's Pizza</span>
+        <button class="btn-order"><span>order</span></button>
+        <span class="txt-rct">recent order</span>    
+      </a>
+    </li>
+    <li>
+      <a class="box-quickorder"> 
+        <div class="item-img" style="background-image:url(/demo/img/2.jpg)"></div>
+        <h4 class="lst-name">Latte small 1</h4>
+        <span class="lst-location">Domino's Pizza</span>
+        <button class="btn-order"><span>order</span></button>
+        <span class="txt-rct">recent order</span>    
+      </a>
+    </li>
+
+    <li>
+      <a class="box-quickorder"> 
+        <div class="item-img" style="background-image:url(/demo/img/3.jpg)"></div>
+        <h4 class="lst-name">Latte small 1</h4>
+        <span class="lst-location">Domino's Pizza</span>
+        <button class="btn-order"><span>order</span></button>
+        <span class="txt-rct">recent order</span>    
+      </a>
+    </li>
+
+    <li>
+      <a class="box-quickorder"> 
+        <div class="item-img" style="background-image:url(/demo/img/4.jpg)"></div>
+        <h4 class="lst-name">Latte small 1</h4>
+        <span class="lst-location">Domino's Pizza</span>
+        <button class="btn-order"><span>order</span></button>
+        <span class="txt-rct">recent order</span>    
+      </a>
+    </li>
+
+    <li>
+      <a class="box-quickorder"> 
+        <div class="item-img" style="background-image:url(/demo/img/1.jpg)"></div>
+        <h4 class="lst-name">Latte small 1</h4>
+        <span class="lst-location">Domino's Pizza</span>
+        <button class="btn-order"><span>order</span></button>
+        <span class="txt-rct">recent order</span>    
+      </a>
+    </li>
+    <li>
+      <a class="box-quickorder"> 
+        <div class="item-img" style="background-image:url(/demo/img/2.jpg)"></div>
+        <h4 class="lst-name">Latte small 1</h4>
+        <span class="lst-location">Domino's Pizza</span>
+        <button class="btn-order"><span>order</span></button>
+        <span class="txt-rct">recent order</span>    
+      </a>
+    </li>
+
+    <li>
+      <a class="box-quickorder"> 
+        <div class="item-img" style="background-image:url(/demo/img/3.jpg)"></div>
+        <h4 class="lst-name">Latte small 1</h4>
+        <span class="lst-location">Domino's Pizza</span>
+        <button class="btn-order"><span>order</span></button>
+        <span class="txt-rct">recent order</span>    
+      </a>
+    </li>
+
+    <li>
+      <a class="box-quickorder"> 
+        <div class="item-img" style="background-image:url(/demo/img/4.jpg)"></div>
+        <h4 class="lst-name">Latte small 1</h4>
+        <span class="lst-location">Domino's Pizza</span>
+        <button class="btn-order"><span>order</span></button>
+        <span class="txt-rct">recent order</span>    
+      </a>
+    </li> 
+  </ul> 
+      </div>
+
+      </div>  <!-- swipeWrap -->
+    </div> <!-- viewArea -->
+    <!-- 
+    <div class="buttonNavi">
+    <button class="swipe-prev"><</button>
+    <button class="swipe-next">></button>
+    </div>
+    -->
+  </div> <!-- wrapper-->
+
+
+  <script src="../node_modules/mocha/mocha.js"></script>
+  <script src="../node_modules/should/should.js"></script>
+
+  <script src="../dist/swipe_merge_es5.js"></script>
+
+  <script>
+    //initialize Mocha.
+    mocha.setup('bdd');
+    mocha.reporter('html');
+  </script>
+
+  <script src='./swipe.test.js'></script>
+
+  <script>
+    if (window.mochaPhantomJS) mochaPhantomJS.run(); else mocha.run();
+  </script>
+
+  </body>
+  </html>
