@@ -291,18 +291,15 @@ class SweetSwipe extends CommonComponent {
 
     //check valid swipe range. 
 
-    //좌측 끝 상태에서 좌측메뉴로 더 가려고 할때.
+    //when go to left on left-side.
     if(nPreX >= this.nMaxSwipeRange) this.bOutRangeLeft = true;
 
-    //TODO. 우측 끝 상태에서 우측메뉴로 더 가려고 할때.
+    //when go to right on right-side.
     if(nPreX <= this.nMinSwipeRange) this.bOutRangeRight = true;
 
     let nNewValue = nPreX + nMoveDiff;
 
-    //이동량이 가능 범위를 넘을때 max값으로 설정.
     if(nNewValue > this.nMaxValue) nNewValue = this.nMaxValue;
-
-    //이동량이 가능 범위를 넘을때 min값으로 설정.
     if(nNewValue < this.nMinValue) nNewValue = this.nMinValue;
 
     _cu.setTranslate3dX(this.elTarget, nNewValue);

@@ -279,6 +279,33 @@ var CommonComponent = function () {
   return CommonComponent;
 }();
 
+/*
+* The MIT License (MIT)
+* Copyright (c) 2016 SK PLANET. All Rights Reserved. *
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions: *
+* The above copyright notice and this permission notice shall be included in
+* all copies or substantial portions of the Software. *
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+* THE SOFTWARE. */
+
+/*!
+* \SwipeNavigationPlugin.js v0.1
+* \copyright Copyright (c) 2016, SK PLANET. All Rights Reserved. 
+* \license This project is released under the MIT License.
+* \contributor nigayoun (nigayoun@gmail.com)
+* \warning dont'use this source in other library source.
+*/
+
 var SwipeNavigationPlugin = function (_CommonComponent) {
   _inherits(SwipeNavigationPlugin, _CommonComponent);
 
@@ -368,6 +395,33 @@ var SwipeNavigationPlugin = function (_CommonComponent) {
   return SwipeNavigationPlugin;
 }(CommonComponent);
 
+/*
+* The MIT License (MIT)
+* Copyright (c) 2016 SK PLANET. All Rights Reserved. *
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions: *
+* The above copyright notice and this permission notice shall be included in
+* all copies or substantial portions of the Software. *
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+* THE SOFTWARE. */
+
+/*!
+* \SwipeStepMoverPlugin.js v0.1
+* \copyright Copyright (c) 2016, SK PLANET. All Rights Reserved. 
+* \license This project is released under the MIT License.
+* \contributor nigayoun (nigayoun@gmail.com)
+* \warning dont'use this source in other library source.
+*/
+
 var SwipeStepMoverPlugin = function (_CommonComponent2) {
   _inherits(SwipeStepMoverPlugin, _CommonComponent2);
 
@@ -451,10 +505,32 @@ var SwipeStepMoverPlugin = function (_CommonComponent2) {
   return SwipeStepMoverPlugin;
 }(CommonComponent);
 
-/*! 
- * \Jisu Youn (jisu.youn@sk.com)
- * \v1.8.1.patch01
- */
+/*
+* The MIT License (MIT)
+* Copyright (c) 2016 SK PLANET. All Rights Reserved. *
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions: *
+* The above copyright notice and this permission notice shall be included in
+* all copies or substantial portions of the Software. *
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+* THE SOFTWARE. */
+
+/*!
+* \swipe_es6.js v0.1
+* \copyright Copyright (c) 2016, SK PLANET. All Rights Reserved. 
+* \license This project is released under the MIT License.
+* \contributor nigayoun (nigayoun@gmail.com)
+* \warning dont'use this source in other library source.
+*/
 
 var SweetSwipe = function (_CommonComponent3) {
   _inherits(SweetSwipe, _CommonComponent3);
@@ -741,18 +817,15 @@ var SweetSwipe = function (_CommonComponent3) {
 
     //check valid swipe range.
 
-    //좌측 끝 상태에서 좌측메뉴로 더 가려고 할때.
+    //when go to left on left-side.
     if (nPreX >= this.nMaxSwipeRange) this.bOutRangeLeft = true;
 
-    //TODO. 우측 끝 상태에서 우측메뉴로 더 가려고 할때.
+    //when go to right on right-side.
     if (nPreX <= this.nMinSwipeRange) this.bOutRangeRight = true;
 
     var nNewValue = nPreX + nMoveDiff;
 
-    //이동량이 가능 범위를 넘을때 max값으로 설정.
     if (nNewValue > this.nMaxValue) nNewValue = this.nMaxValue;
-
-    //이동량이 가능 범위를 넘을때 min값으로 설정.
     if (nNewValue < this.nMinValue) nNewValue = this.nMinValue;
 
     _cu.setTranslate3dX(this.elTarget, nNewValue);
