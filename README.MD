@@ -252,6 +252,10 @@ Button menu navigation UI
 ```
 
 <br>
+## Test
+<a href="https://skplanet.github.io/sweetswipe/spec/swipe.test.html" target="_blank">unit test page</a>
+
+<br>
 ## Contributing
 See our [CONTRIBUTING.md](https://github.com/skplanet/sweetswipe/blob/master/CONTRIBUTING.md) for information on how to contribute.
 
