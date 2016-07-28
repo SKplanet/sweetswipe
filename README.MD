@@ -31,11 +31,15 @@ A lightweight swiping(flicking) mobile web component.
 * npm install
 * gulp buildJS (ES6 -> ES5)
 * import script
-
 ```HTML
 <script src="../dist/swipe_merge_es5.js"></script>
 ```
 
+## Install using Bower
+
+* bower install sweetswipe
+
+<br>
 ## Usage - HTML 
 
 ```HTML
