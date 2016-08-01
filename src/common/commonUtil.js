@@ -11,12 +11,11 @@ var _cu = {
   },
   getWidth(ele) {
     let nWidth = 0;
-
-    if (ele.getBoundingClientRect().width) {
-      nWidth = ele.getBoundingClientRect().width;
-    } else {
-      nWidth = ele.offsetWidth;
-    }
+    try{
+    	nWidth = ele.getBoundingClientRect().width;
+    }catch(err){
+    	nWidth = ele.offsetWidth;
+    } 
     return nWidth
   },
 
