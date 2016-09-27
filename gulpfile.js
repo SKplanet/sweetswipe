@@ -1,6 +1,5 @@
 var 
 	gulp 			= require('gulp'),
-	jspm 			= require('jspm'),
 	runSequence 	= require('run-sequence'),
 	sourcemaps 		= require('gulp-sourcemaps'),
 	babel 			= require('gulp-babel'),
