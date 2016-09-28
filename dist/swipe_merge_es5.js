@@ -175,6 +175,7 @@ var CommonComponent = function () {
 
   //TODO. move to super Class.
 
+
   CommonComponent.prototype.registerUserMethod = function registerUserMethod(htFn) {
     this.setOption(htFn, this.htDefaultFn, this.htUserFn);
   };
@@ -539,7 +540,7 @@ var SweetSwipe = function (_CommonComponent3) {
     return {
       PLUGINS: ['SwipeNavigationPlugin', 'SwipeStepMoverPlugin'],
       SELECTOR: {
-        //inputFieldWrap: '.input-wrap',
+        //inputFieldWrap: '.input-wrap', 
       },
       DEFAULT_COMPONENT_EVENT: ['FN_BEFORE_SWIPE', 'FN_AFTER_SWIPE'],
       DEFAULT_PLUGIN_EVENT: ['FN_BEFORE_SWIPE', 'FN_AFTER_SWIPE'],
@@ -571,7 +572,7 @@ var SweetSwipe = function (_CommonComponent3) {
     //swipe container width
     this.nSwipeWidth = _cu.getWidth(this.elTarget.firstElementChild); //case. position : static(float)
 
-    //swipe element count
+    //swipe element count 
     this.nSwipeElementCount = this.elTarget.childElementCount;
 
     var bCircular = this.option.bCircular;
@@ -655,7 +656,7 @@ var SweetSwipe = function (_CommonComponent3) {
     this.nMovePosX = Math.floor(htCurrentEvt.pageX);
     this.nMovePosY = Math.floor(htCurrentEvt.pageY);
 
-    //detect angle
+    //detect angle 
     if (this.bFirstTouchMove) {
       var nAngleDiff = Math.abs(this.nMovePosY - this.nStartPosY) / Math.abs(this.nMovePosX - this.nStartPosX);
       this.bSwipe = !!(nAngleDiff <= this.option.nDecisionSlope);
@@ -728,7 +729,7 @@ var SweetSwipe = function (_CommonComponent3) {
 
     this.runSwipeAction(this.option.nDuration, this.nNextNumber, nWidthForAnimation);
 
-    //TODO. make reset method
+    //TODO. make reset method 
     this.bOutRangeRight = false;
     this.bOutRangeLeft = false;
     this.bSwipe = false;
@@ -815,7 +816,7 @@ var SweetSwipe = function (_CommonComponent3) {
     this.bOutRangeRight = false;
     this.bOutRangeLeft = false;
 
-    //check valid swipe range.
+    //check valid swipe range. 
 
     //when go to left on left-side.
     if (nPreX >= this.nMaxSwipeRange) this.bOutRangeLeft = true;
